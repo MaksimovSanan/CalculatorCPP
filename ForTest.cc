@@ -3,9 +3,9 @@
 
 int main(void) {
     model test;
-    test.UpdateFunc("33.5+76.5");
-    std::cout << test.GetCalifornia() << std::endl;
-    std::cout << test.Calculate((double)1.0) << std::endl;
+    test.UpdateFunc("-3+5");
+    test.PrintCalifornia();
+    std::cout << test.Calculate(1.0) << std::endl;
 
     return  0;
 }
