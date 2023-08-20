@@ -41,3 +41,11 @@ void MainWindow::enter_symbol() {
 }
 
 
+
+void MainWindow::on_pushButton_equal_clicked()
+{
+    std::string func = ui->lineEdit_func->text().toStdString();
+    controller.Calculate(func, 0);
+    ui->lineEdit_func->setText(QString::fromStdString(func));
+}
+

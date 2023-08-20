@@ -27,6 +27,8 @@ private slots:
     void enter_symbol();
 
 
+    void on_pushButton_equal_clicked();
+
 private:
     Ui::MainWindow *ui;
     Controller controller;
