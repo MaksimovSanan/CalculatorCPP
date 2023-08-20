@@ -9,6 +9,11 @@ void model::Convert() {
         if(Func_[0] == ' ') {
             Func_.erase(0, 1);
         }
+        else if(Func_[0] == 'x' || Func_[0] == 'X') {
+            California_.push_back(std::make_pair('x', '?'));
+            Func_.erase(0, 1);
+            new_line = false;
+        }
         else if(Func_[0] == '-' && new_line) Func_[0] = '~';
         else if(Func_[0] >= '0' && Func_[0] <= '9') {
             California_.push_back(std::make_pair(std::stod(Func_), '?'));
@@ -58,7 +63,8 @@ double model::Calculate(double x) {
     
     for(auto val : California_) {
         if(val.second == '?') {
-            texas.push(val.first);
+            if (val.first == 'x') texas.push(x);
+            else texas.push(val.first);
         }
         else {
             texas.push(Eval(val.second, texas));

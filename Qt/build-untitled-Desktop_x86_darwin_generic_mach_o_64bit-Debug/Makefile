@@ -166,6 +166,30 @@ Users/songrash/proj/calc/CalculatorCPP/model.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/Users/songrash/proj/calc/CalculatorCPP/model.cc.s
 .PHONY : Users/songrash/proj/calc/CalculatorCPP/model.cc.s
 
+graphwindow.o: graphwindow.cpp.o
+.PHONY : graphwindow.o
+
+# target to build an object file
+graphwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/graphwindow.cpp.o
+.PHONY : graphwindow.cpp.o
+
+graphwindow.i: graphwindow.cpp.i
+.PHONY : graphwindow.i
+
+# target to preprocess a source file
+graphwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/graphwindow.cpp.i
+.PHONY : graphwindow.cpp.i
+
+graphwindow.s: graphwindow.cpp.s
+.PHONY : graphwindow.s
+
+# target to generate assembly for a file
+graphwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/graphwindow.cpp.s
+.PHONY : graphwindow.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -214,6 +238,30 @@ mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
+qcustomplot.o: qcustomplot.cpp.o
+.PHONY : qcustomplot.o
+
+# target to build an object file
+qcustomplot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/qcustomplot.cpp.o
+.PHONY : qcustomplot.cpp.o
+
+qcustomplot.i: qcustomplot.cpp.i
+.PHONY : qcustomplot.i
+
+# target to preprocess a source file
+qcustomplot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/qcustomplot.cpp.i
+.PHONY : qcustomplot.cpp.i
+
+qcustomplot.s: qcustomplot.cpp.s
+.PHONY : qcustomplot.s
+
+# target to generate assembly for a file
+qcustomplot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/untitled.dir/build.make CMakeFiles/untitled.dir/qcustomplot.cpp.s
+.PHONY : qcustomplot.cpp.s
+
 untitled_autogen/mocs_compilation.o: untitled_autogen/mocs_compilation.cpp.o
 .PHONY : untitled_autogen/mocs_compilation.o
 
@@ -251,12 +299,18 @@ help:
 	@echo "... Users/songrash/proj/calc/CalculatorCPP/model.o"
 	@echo "... Users/songrash/proj/calc/CalculatorCPP/model.i"
 	@echo "... Users/songrash/proj/calc/CalculatorCPP/model.s"
+	@echo "... graphwindow.o"
+	@echo "... graphwindow.i"
+	@echo "... graphwindow.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
 	@echo "... mainwindow.o"
 	@echo "... mainwindow.i"
 	@echo "... mainwindow.s"
+	@echo "... qcustomplot.o"
+	@echo "... qcustomplot.i"
+	@echo "... qcustomplot.s"
 	@echo "... untitled_autogen/mocs_compilation.o"
 	@echo "... untitled_autogen/mocs_compilation.i"
 	@echo "... untitled_autogen/mocs_compilation.s"

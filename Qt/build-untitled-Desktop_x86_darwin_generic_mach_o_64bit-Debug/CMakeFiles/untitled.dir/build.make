@@ -125,12 +125,42 @@ CMakeFiles/untitled.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/mainwindow.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/mainwindow.cpp -o CMakeFiles/untitled.dir/mainwindow.cpp.s
 
+CMakeFiles/untitled.dir/qcustomplot.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/qcustomplot.cpp.o: /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/qcustomplot.cpp
+CMakeFiles/untitled.dir/qcustomplot.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/untitled.dir/qcustomplot.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/qcustomplot.cpp.o -MF CMakeFiles/untitled.dir/qcustomplot.cpp.o.d -o CMakeFiles/untitled.dir/qcustomplot.cpp.o -c /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/qcustomplot.cpp
+
+CMakeFiles/untitled.dir/qcustomplot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/qcustomplot.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/qcustomplot.cpp > CMakeFiles/untitled.dir/qcustomplot.cpp.i
+
+CMakeFiles/untitled.dir/qcustomplot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/qcustomplot.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/qcustomplot.cpp -o CMakeFiles/untitled.dir/qcustomplot.cpp.s
+
+CMakeFiles/untitled.dir/graphwindow.cpp.o: CMakeFiles/untitled.dir/flags.make
+CMakeFiles/untitled.dir/graphwindow.cpp.o: /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/graphwindow.cpp
+CMakeFiles/untitled.dir/graphwindow.cpp.o: CMakeFiles/untitled.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/untitled.dir/graphwindow.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/untitled.dir/graphwindow.cpp.o -MF CMakeFiles/untitled.dir/graphwindow.cpp.o.d -o CMakeFiles/untitled.dir/graphwindow.cpp.o -c /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/graphwindow.cpp
+
+CMakeFiles/untitled.dir/graphwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/untitled.dir/graphwindow.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/graphwindow.cpp > CMakeFiles/untitled.dir/graphwindow.cpp.i
+
+CMakeFiles/untitled.dir/graphwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/untitled.dir/graphwindow.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/graphwindow.cpp -o CMakeFiles/untitled.dir/graphwindow.cpp.s
+
 # Object files for target untitled
 untitled_OBJECTS = \
 "CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/untitled.dir/Users/songrash/proj/calc/CalculatorCPP/model.cc.o" \
 "CMakeFiles/untitled.dir/main.cpp.o" \
-"CMakeFiles/untitled.dir/mainwindow.cpp.o"
+"CMakeFiles/untitled.dir/mainwindow.cpp.o" \
+"CMakeFiles/untitled.dir/qcustomplot.cpp.o" \
+"CMakeFiles/untitled.dir/graphwindow.cpp.o"
 
 # External object files for target untitled
 untitled_EXTERNAL_OBJECTS =
@@ -139,12 +169,16 @@ untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/untitled_autogen/m
 untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/Users/songrash/proj/calc/CalculatorCPP/model.cc.o
 untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/main.cpp.o
 untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/mainwindow.cpp.o
+untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/qcustomplot.cpp.o
+untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/graphwindow.cpp.o
 untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/build.make
+untitled.app/Contents/MacOS/untitled: /usr/local/lib/QtPrintSupport.framework/Versions/A/QtPrintSupport
 untitled.app/Contents/MacOS/untitled: /usr/local/lib/QtWidgets.framework/Versions/A/QtWidgets
 untitled.app/Contents/MacOS/untitled: /usr/local/lib/QtGui.framework/Versions/A/QtGui
 untitled.app/Contents/MacOS/untitled: /usr/local/lib/QtCore.framework/Versions/A/QtCore
+untitled.app/Contents/MacOS/untitled: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libcups.tbd
 untitled.app/Contents/MacOS/untitled: CMakeFiles/untitled.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable untitled.app/Contents/MacOS/untitled"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable untitled.app/Contents/MacOS/untitled"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/untitled.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

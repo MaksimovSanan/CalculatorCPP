@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "../../model.h"
 #include "../../controller.h"
+#include "graphwindow.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,7 +15,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(Controller controller, QWidget *parent = nullptr);
+    explicit MainWindow(Controller controller, QWidget *parent = nullptr);
     ~MainWindow();
 
 

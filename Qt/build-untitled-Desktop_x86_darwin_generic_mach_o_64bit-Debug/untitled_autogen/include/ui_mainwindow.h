@@ -29,7 +29,7 @@ class Ui_MainWindow
 public:
     QAction *actionAdd_new;
     QWidget *centralwidget;
-    QWidget *verticalLayoutWidget;
+    QGridLayout *gridLayout_2;
     QVBoxLayout *verticalLayout_2;
     QLineEdit *lineEdit_func;
     QGridLayout *gridLayout;
@@ -66,13 +66,16 @@ public:
         actionAdd_new->setObjectName(QString::fromUtf8("actionAdd_new"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        verticalLayoutWidget = new QWidget(centralwidget);
-        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
-        verticalLayoutWidget->setGeometry(QRect(210, 50, 401, 451));
-        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget);
+        QSizePolicy sizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(centralwidget->sizePolicy().hasHeightForWidth());
+        centralwidget->setSizePolicy(sizePolicy);
+        gridLayout_2 = new QGridLayout(centralwidget);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        lineEdit_func = new QLineEdit(verticalLayoutWidget);
+        lineEdit_func = new QLineEdit(centralwidget);
         lineEdit_func->setObjectName(QString::fromUtf8("lineEdit_func"));
         lineEdit_func->setMinimumSize(QSize(0, 100));
 
@@ -80,13 +83,13 @@ public:
 
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        pushButton_two = new QPushButton(verticalLayoutWidget);
+        pushButton_two = new QPushButton(centralwidget);
         pushButton_two->setObjectName(QString::fromUtf8("pushButton_two"));
-        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton_two->sizePolicy().hasHeightForWidth());
-        pushButton_two->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(pushButton_two->sizePolicy().hasHeightForWidth());
+        pushButton_two->setSizePolicy(sizePolicy1);
         pushButton_two->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -100,17 +103,17 @@ public:
 
         gridLayout->addWidget(pushButton_two, 3, 1, 1, 1);
 
-        pushButton_mod = new QPushButton(verticalLayoutWidget);
+        pushButton_mod = new QPushButton(centralwidget);
         pushButton_mod->setObjectName(QString::fromUtf8("pushButton_mod"));
-        sizePolicy.setHeightForWidth(pushButton_mod->sizePolicy().hasHeightForWidth());
-        pushButton_mod->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_mod->sizePolicy().hasHeightForWidth());
+        pushButton_mod->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_mod, 0, 2, 1, 1);
 
-        pushButton_nine = new QPushButton(verticalLayoutWidget);
+        pushButton_nine = new QPushButton(centralwidget);
         pushButton_nine->setObjectName(QString::fromUtf8("pushButton_nine"));
-        sizePolicy.setHeightForWidth(pushButton_nine->sizePolicy().hasHeightForWidth());
-        pushButton_nine->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_nine->sizePolicy().hasHeightForWidth());
+        pushButton_nine->setSizePolicy(sizePolicy1);
         pushButton_nine->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -124,17 +127,17 @@ public:
 
         gridLayout->addWidget(pushButton_nine, 1, 2, 1, 1);
 
-        pushButton_minus = new QPushButton(verticalLayoutWidget);
+        pushButton_minus = new QPushButton(centralwidget);
         pushButton_minus->setObjectName(QString::fromUtf8("pushButton_minus"));
-        sizePolicy.setHeightForWidth(pushButton_minus->sizePolicy().hasHeightForWidth());
-        pushButton_minus->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_minus->sizePolicy().hasHeightForWidth());
+        pushButton_minus->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_minus, 2, 3, 1, 1);
 
-        pushButton_dot = new QPushButton(verticalLayoutWidget);
+        pushButton_dot = new QPushButton(centralwidget);
         pushButton_dot->setObjectName(QString::fromUtf8("pushButton_dot"));
-        sizePolicy.setHeightForWidth(pushButton_dot->sizePolicy().hasHeightForWidth());
-        pushButton_dot->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_dot->sizePolicy().hasHeightForWidth());
+        pushButton_dot->setSizePolicy(sizePolicy1);
         pushButton_dot->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -148,10 +151,10 @@ public:
 
         gridLayout->addWidget(pushButton_dot, 4, 2, 1, 1);
 
-        pushButton_zero = new QPushButton(verticalLayoutWidget);
+        pushButton_zero = new QPushButton(centralwidget);
         pushButton_zero->setObjectName(QString::fromUtf8("pushButton_zero"));
-        sizePolicy.setHeightForWidth(pushButton_zero->sizePolicy().hasHeightForWidth());
-        pushButton_zero->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_zero->sizePolicy().hasHeightForWidth());
+        pushButton_zero->setSizePolicy(sizePolicy1);
         pushButton_zero->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -165,24 +168,24 @@ public:
 
         gridLayout->addWidget(pushButton_zero, 4, 0, 1, 2);
 
-        pushButton_plus = new QPushButton(verticalLayoutWidget);
+        pushButton_plus = new QPushButton(centralwidget);
         pushButton_plus->setObjectName(QString::fromUtf8("pushButton_plus"));
-        sizePolicy.setHeightForWidth(pushButton_plus->sizePolicy().hasHeightForWidth());
-        pushButton_plus->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_plus->sizePolicy().hasHeightForWidth());
+        pushButton_plus->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_plus, 3, 3, 1, 1);
 
-        pushButton_multiply = new QPushButton(verticalLayoutWidget);
+        pushButton_multiply = new QPushButton(centralwidget);
         pushButton_multiply->setObjectName(QString::fromUtf8("pushButton_multiply"));
-        sizePolicy.setHeightForWidth(pushButton_multiply->sizePolicy().hasHeightForWidth());
-        pushButton_multiply->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_multiply->sizePolicy().hasHeightForWidth());
+        pushButton_multiply->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_multiply, 1, 3, 1, 1);
 
-        pushButton_four = new QPushButton(verticalLayoutWidget);
+        pushButton_four = new QPushButton(centralwidget);
         pushButton_four->setObjectName(QString::fromUtf8("pushButton_four"));
-        sizePolicy.setHeightForWidth(pushButton_four->sizePolicy().hasHeightForWidth());
-        pushButton_four->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_four->sizePolicy().hasHeightForWidth());
+        pushButton_four->setSizePolicy(sizePolicy1);
         pushButton_four->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -196,10 +199,10 @@ public:
 
         gridLayout->addWidget(pushButton_four, 2, 0, 1, 1);
 
-        pushButton_one = new QPushButton(verticalLayoutWidget);
+        pushButton_one = new QPushButton(centralwidget);
         pushButton_one->setObjectName(QString::fromUtf8("pushButton_one"));
-        sizePolicy.setHeightForWidth(pushButton_one->sizePolicy().hasHeightForWidth());
-        pushButton_one->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_one->sizePolicy().hasHeightForWidth());
+        pushButton_one->setSizePolicy(sizePolicy1);
         pushButton_one->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -213,17 +216,17 @@ public:
 
         gridLayout->addWidget(pushButton_one, 3, 0, 1, 1);
 
-        pushButton_equal = new QPushButton(verticalLayoutWidget);
+        pushButton_equal = new QPushButton(centralwidget);
         pushButton_equal->setObjectName(QString::fromUtf8("pushButton_equal"));
-        sizePolicy.setHeightForWidth(pushButton_equal->sizePolicy().hasHeightForWidth());
-        pushButton_equal->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_equal->sizePolicy().hasHeightForWidth());
+        pushButton_equal->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_equal, 4, 3, 1, 1);
 
-        pushButton_five = new QPushButton(verticalLayoutWidget);
+        pushButton_five = new QPushButton(centralwidget);
         pushButton_five->setObjectName(QString::fromUtf8("pushButton_five"));
-        sizePolicy.setHeightForWidth(pushButton_five->sizePolicy().hasHeightForWidth());
-        pushButton_five->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_five->sizePolicy().hasHeightForWidth());
+        pushButton_five->setSizePolicy(sizePolicy1);
         pushButton_five->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -237,10 +240,10 @@ public:
 
         gridLayout->addWidget(pushButton_five, 2, 1, 1, 1);
 
-        pushButton_eight = new QPushButton(verticalLayoutWidget);
+        pushButton_eight = new QPushButton(centralwidget);
         pushButton_eight->setObjectName(QString::fromUtf8("pushButton_eight"));
-        sizePolicy.setHeightForWidth(pushButton_eight->sizePolicy().hasHeightForWidth());
-        pushButton_eight->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_eight->sizePolicy().hasHeightForWidth());
+        pushButton_eight->setSizePolicy(sizePolicy1);
         pushButton_eight->setStyleSheet(QString::fromUtf8("QPushButton#pushButton_eight {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -254,31 +257,31 @@ public:
 
         gridLayout->addWidget(pushButton_eight, 1, 1, 1, 1);
 
-        pushButton_4 = new QPushButton(verticalLayoutWidget);
+        pushButton_4 = new QPushButton(centralwidget);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        sizePolicy.setHeightForWidth(pushButton_4->sizePolicy().hasHeightForWidth());
-        pushButton_4->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_4->sizePolicy().hasHeightForWidth());
+        pushButton_4->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_4, 0, 0, 1, 1);
 
-        pushButton_divide = new QPushButton(verticalLayoutWidget);
+        pushButton_divide = new QPushButton(centralwidget);
         pushButton_divide->setObjectName(QString::fromUtf8("pushButton_divide"));
-        sizePolicy.setHeightForWidth(pushButton_divide->sizePolicy().hasHeightForWidth());
-        pushButton_divide->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_divide->sizePolicy().hasHeightForWidth());
+        pushButton_divide->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_divide, 0, 3, 1, 1);
 
-        pushButton_3 = new QPushButton(verticalLayoutWidget);
+        pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        sizePolicy.setHeightForWidth(pushButton_3->sizePolicy().hasHeightForWidth());
-        pushButton_3->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_3->sizePolicy().hasHeightForWidth());
+        pushButton_3->setSizePolicy(sizePolicy1);
 
         gridLayout->addWidget(pushButton_3, 0, 1, 1, 1);
 
-        pushButton_seven = new QPushButton(verticalLayoutWidget);
+        pushButton_seven = new QPushButton(centralwidget);
         pushButton_seven->setObjectName(QString::fromUtf8("pushButton_seven"));
-        sizePolicy.setHeightForWidth(pushButton_seven->sizePolicy().hasHeightForWidth());
-        pushButton_seven->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_seven->sizePolicy().hasHeightForWidth());
+        pushButton_seven->setSizePolicy(sizePolicy1);
         pushButton_seven->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -292,10 +295,10 @@ public:
 
         gridLayout->addWidget(pushButton_seven, 1, 0, 1, 1);
 
-        pushButton_three = new QPushButton(verticalLayoutWidget);
+        pushButton_three = new QPushButton(centralwidget);
         pushButton_three->setObjectName(QString::fromUtf8("pushButton_three"));
-        sizePolicy.setHeightForWidth(pushButton_three->sizePolicy().hasHeightForWidth());
-        pushButton_three->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_three->sizePolicy().hasHeightForWidth());
+        pushButton_three->setSizePolicy(sizePolicy1);
         pushButton_three->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -309,10 +312,10 @@ public:
 
         gridLayout->addWidget(pushButton_three, 3, 2, 1, 1);
 
-        pushButton_six = new QPushButton(verticalLayoutWidget);
+        pushButton_six = new QPushButton(centralwidget);
         pushButton_six->setObjectName(QString::fromUtf8("pushButton_six"));
-        sizePolicy.setHeightForWidth(pushButton_six->sizePolicy().hasHeightForWidth());
-        pushButton_six->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(pushButton_six->sizePolicy().hasHeightForWidth());
+        pushButton_six->setSizePolicy(sizePolicy1);
         pushButton_six->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "	border-radius: 5px;\n"
 "    border: 1px solid #000000;\n"
@@ -328,6 +331,9 @@ public:
 
 
         verticalLayout_2->addLayout(gridLayout);
+
+
+        gridLayout_2->addLayout(verticalLayout_2, 0, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);

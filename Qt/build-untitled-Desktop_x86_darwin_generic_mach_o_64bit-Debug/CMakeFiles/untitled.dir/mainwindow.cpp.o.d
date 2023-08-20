@@ -339,6 +339,7 @@ CMakeFiles/untitled.dir/mainwindow.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/bitset \
   /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/../../controller.h \
+  /Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/graphwindow.h \
   /Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/untitled_autogen/include/./ui_mainwindow.h \
   /usr/local/include/QtCore/QVariant \
   /usr/local/lib/QtCore.framework/Headers/qvariant.h \

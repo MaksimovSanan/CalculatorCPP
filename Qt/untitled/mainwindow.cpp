@@ -33,6 +33,10 @@ MainWindow::~MainWindow()
 void MainWindow::on_actionAdd_new_triggered()
 {
     ui->statusbar->showMessage("Sozdanie graphika");
+    model *graph_model= new model;
+    Controller *graph_controller = new Controller(*graph_model);
+    GraphWindow *graph_window = new GraphWindow(*graph_controller, this);
+    graph_window->show();
 }
 
 void MainWindow::enter_symbol() {

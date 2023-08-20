@@ -9,8 +9,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/songrash/proj/calc/CalculatorCPP/model.cc" "CMakeFiles/untitled.dir/Users/songrash/proj/calc/CalculatorCPP/model.cc.o" "gcc" "CMakeFiles/untitled.dir/Users/songrash/proj/calc/CalculatorCPP/model.cc.o.d"
+  "/Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/graphwindow.cpp" "CMakeFiles/untitled.dir/graphwindow.cpp.o" "gcc" "CMakeFiles/untitled.dir/graphwindow.cpp.o.d"
   "/Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/main.cpp" "CMakeFiles/untitled.dir/main.cpp.o" "gcc" "CMakeFiles/untitled.dir/main.cpp.o.d"
   "/Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/mainwindow.cpp" "CMakeFiles/untitled.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/untitled.dir/mainwindow.cpp.o.d"
+  "/Users/songrash/proj/calc/CalculatorCPP/Qt/untitled/qcustomplot.cpp" "CMakeFiles/untitled.dir/qcustomplot.cpp.o" "gcc" "CMakeFiles/untitled.dir/qcustomplot.cpp.o.d"
   "/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/untitled_autogen/mocs_compilation.cpp" "CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/untitled.dir/untitled_autogen/mocs_compilation.cpp.o.d"
   )
 
