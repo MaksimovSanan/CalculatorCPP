@@ -1,4 +1,0 @@
-/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/untitled.dir
-/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/edit_cache.dir
-/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/rebuild_cache.dir
-/Users/songrash/proj/calc/CalculatorCPP/Qt/build-untitled-Desktop_x86_darwin_generic_mach_o_64bit-Debug/CMakeFiles/untitled_autogen.dir
